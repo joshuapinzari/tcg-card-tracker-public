@@ -1,0 +1,23 @@
+{
+  "model_version": "challenger_v1_2026-10-16",
+  "status": "frozen",
+  "frozen_on": "2026-10-16",
+  "prediction_horizon_days": 90,
+  "analogue_neighbors": 150,
+  "primary_price_floor_usd": 20.0,
+  "weights": {
+    "Historical analogues": 32.0,
+    "Momentum profile": 28.0,
+    "Validated overheating risk": 28.0,
+    "Prior run-up": 9.0,
+    "Recovery / drawdown": 3.0
+  },
+  "factor_directions": {
+    "Historical analogues": 1,
+    "Momentum profile": 1,
+    "Validated overheating risk": 1,
+    "Prior run-up": -1,
+    "Recovery / drawdown": 1
+  },
+  "notes": "Frozen production-facing V3 challenger. Historical re-evaluation must not alter this specification. Prospective 30D/90D lockbox results are evaluated separately when they mature."
+}

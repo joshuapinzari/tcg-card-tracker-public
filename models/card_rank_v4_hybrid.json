@@ -1,0 +1,71 @@
+{
+  "model_version": "hybrid_v4_challenger_2026-10-18_ex",
+  "status": "frozen_challenger",
+  "frozen_on": "2026-10-18",
+  "parent_model": "challenger_v1_2026-10-16",
+  "prediction_horizon_days": 90,
+  "analogue_neighbors": 150,
+  "primary_price_floor_usd": 20.0,
+  "factor_set": [
+    "Historical analogues",
+    "Momentum profile",
+    "Validated overheating risk",
+    "Prior run-up",
+    "Recovery / drawdown"
+  ],
+  "regimes": {
+    "Modern": {
+      "eras": [
+        "Sword & Shield",
+        "Scarlet & Violet",
+        "Mega Evolution"
+      ],
+      "weights": {
+        "Historical analogues": 30.0445,
+        "Momentum profile": 11.3475,
+        "Validated overheating risk": 31.8165,
+        "Prior run-up": 6.151,
+        "Recovery / drawdown": 20.6405
+      },
+      "prior_runup_rating_multiplier": -1,
+      "source": "Arithmetic mean of four outer-fold V4 regime fits; prior-run-up reversed in 4/4 folds."
+    },
+    "Mid-era": {
+      "eras": [
+        "Black & White",
+        "XY",
+        "Sun & Moon"
+      ],
+      "use_parent_exact": true,
+      "source": "Frozen V3 retained because regime-specific refit did not improve out-of-fold performance."
+    },
+    "Vintage": {
+      "eras": [
+        "Diamond & Pearl",
+        "Platinum",
+        "HGSS",
+        "EX"
+      ],
+      "weights": {
+        "Historical analogues": 31.0415,
+        "Momentum profile": 9.35875,
+        "Validated overheating risk": 31.752,
+        "Prior run-up": 20.39475,
+        "Recovery / drawdown": 7.453
+      },
+      "prior_runup_rating_multiplier": 1,
+      "source": "Arithmetic mean of four outer-fold V4 regime fits; prior-run-up kept the V3 direction in 4/4 folds."
+    }
+  },
+  "research_evidence": {
+    "frozen_v3_rank_ic": 0.185,
+    "frozen_v3_q5_q1": 0.0558,
+    "frozen_v3_top20_alpha": 0.0851,
+    "hybrid_v4_rank_ic": 0.187,
+    "hybrid_v4_q5_q1": 0.0903,
+    "hybrid_v4_top20_alpha": 0.0927,
+    "hybrid_spread_win_folds": 4,
+    "outer_folds": 4
+  },
+  "notes": "Final frozen Hybrid V4 challenger for prospective lockbox. Modern uses Modern V4; Mid-era uses exact frozen V3; Vintage includes EX, Diamond & Pearl, Platinum and HGSS. e-Card remains outside V4 after transfer testing and falls back to V3 in live tooling. Do not retune during the prospective lockbox."
+}

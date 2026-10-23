@@ -1,0 +1,33 @@
+{
+  "model_version": "regime_v4_research_2026-10-18",
+  "status": "research_only",
+  "parent_model": "challenger_v1_2026-10-16",
+  "prediction_horizon_days": 90,
+  "analogue_neighbors": 150,
+  "primary_price_floor_usd": 20.0,
+  "factor_set": [
+    "Historical analogues",
+    "Momentum profile",
+    "Validated overheating risk",
+    "Prior run-up",
+    "Recovery / drawdown"
+  ],
+  "regimes": {
+    "Modern": [
+      "Sword & Shield",
+      "Scarlet & Violet",
+      "Mega Evolution"
+    ],
+    "Mid-era": [
+      "Black & White",
+      "XY",
+      "Sun & Moon"
+    ],
+    "Vintage": [
+      "Diamond & Pearl",
+      "Platinum",
+      "HGSS"
+    ]
+  },
+  "notes": "Research-only V4 hypothesis. Card age is segmented, but every training/validation state remains inside the recent 2024+ market-regime policy. Production V3 is not modified."
+}

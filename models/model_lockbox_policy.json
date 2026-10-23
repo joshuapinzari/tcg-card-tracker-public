@@ -1,0 +1,19 @@
+{
+  "policy_version": "prospective_v3_v4_lockbox_v2_2026-10-18",
+  "status": "frozen",
+  "primary_price_floor_usd": 20.0,
+  "horizons_days": [
+    30,
+    90
+  ],
+  "primary_horizon_days": 90,
+  "primary_target": "set_alpha",
+  "secondary_target": "raw_return",
+  "outcome_lookback_days": 7,
+  "recommended_snapshot_cadence_days": 7,
+  "models": [
+    "challenger_v1_2026-10-16",
+    "hybrid_v4_challenger_2026-10-18_ex"
+  ],
+  "notes": "Final prospective V3-vs-Hybrid-V4 lockbox. Hybrid V4 includes EX in Vintage after completed transfer research; e-Card is not part of the V4 comparison. 30D is diagnostic only; 90D is the primary verdict. No model weights or regime mappings may be changed during the lockbox."
+}

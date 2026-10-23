@@ -1,0 +1,7 @@
+{
+  "policy_version": "frozen_v3_recent_regime_v1_2026-10-17",
+  "market_regime_start": "2024-08-12",
+  "stable_sample_rate": 0.04,
+  "stable_sample_salt": "frozen-v3-recent-regime-v1",
+  "notes": "Keep card age separate from market-regime age. Older cards may be evaluated, but historical states before the recent 2024+ Pokemon market regime are excluded. Stable hash sampling is append-only: adding new cards or eras cannot displace previously selected rows."
+}
